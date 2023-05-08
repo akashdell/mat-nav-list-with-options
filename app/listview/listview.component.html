@@ -1,0 +1,14 @@
+<div cdkTrapFocus>
+  <mat-nav-list>
+    <h3 matSubheader>This is the listview</h3>
+    <a mat-list-item [routerLink]="['/detail']" tabindex="-1">
+      <span matLine>Title</span>
+      <button mat-icon-button (click)="onAdd($event)">
+        <mat-icon>add</mat-icon>
+      </button>
+      <button mat-icon-button (click)="onRemove($event)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </a>
+  </mat-nav-list>
+</div>
